@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Bem vindo! Este programa informa em que ano tivemos a copa do mundo, você poderá digitar a data limite no retângulo abaixo! OBS: Se não digitar uma data limite, não funcionará; se digitar uma data limite muito alta, seu computador pode entrar em pane!"));
+
+    while(anoCopa <= limite) {
+    	mostra("Tivemos copa em " + anoCopa);
+    	var anoCopa + 4;
+    }
+
+    mostra("FIM!");
+
+</script>

@@ -1,0 +1,35 @@
+<meta charset = "UTF - 8">
+
+<input />
+<button>Chute</button>
+
+<script>
+	// esses colchetes são chamados de array, e ele conta o número de algarismos diferente de nós que começamos a contar do 1, ele começa a contar do 0. Então 2 = 0, 4 = 1 e assim por diante.
+	var numeros = [2, 4, 6, 8];
+
+	var input = document.querySelector("input");
+	input.focus();
+
+	function verifica() {
+		var achou = false;
+		for (var posicao = 0; posicao < numeros.length; posicao++) {
+			if(input.value == numeros[posicao]) {
+				alert("VOCÊ ACERTOU!!");
+				var achou = true;
+				break;
+			}
+		}
+
+		if(achou == false) {
+			alert("VOCÊ ERROU!!");
+		}
+
+		input.value = "";
+		input.focus();
+	}
+
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+</script>

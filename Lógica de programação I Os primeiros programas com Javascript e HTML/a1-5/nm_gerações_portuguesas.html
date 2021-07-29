@@ -1,0 +1,15 @@
+<script>
+	var nome = prompt("Por favor, informe seu nome.");
+	alert("Olá " + nome + ", seja bem vindo! Este é um programa para calcular quantas gerações a sua família já teve, você poderá escolher o ano de início da contagem e o ano de término!");
+	var MAC1 = 24;
+	alert(nome + ", para calcular quantas gerações sua família teve desde o ano de início da contagem até o ano de término vamos diminuir o ano de ínicio pelo ano de término e dividir pela idade média que casais brasileiros tem seu primeiro filho - " + MAC1 + "(idade média da fecundidade) chegou a 24 anos em 2010. " + nome + ", vamos começar?");
+	var y = prompt(nome + ", informe o sobrenome da linhagem que deseja saber o número de gerações. (Ex: Campos)");
+	var anoI = parseInt(prompt("Por favor, informe o ano que deseja por como início da contagem."));
+	var anoT = parseInt(prompt("Por favor, informe o ano que deseja ter como término dá contagem. (Ex: ano atual)"));
+	
+
+	var x = ((anoI - anoT) / MAC1);
+
+	document.write(nome + ", a família " + y + " teve " + x + " gerações.");
+
+</script>

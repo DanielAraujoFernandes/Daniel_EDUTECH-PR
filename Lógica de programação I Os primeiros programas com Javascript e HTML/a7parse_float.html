@@ -1,0 +1,23 @@
+<meta charset= "UTF=8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+//vemos na variável executada abaixo que parseInt arredonda o número sozinho, porém, e se quisermos o número decimal que o usuário digitar?
+
+    var numero = parseInt(prompt("Numero decimal."));
+    mostra("O numero digitado é " + numero);
+
+//para isso temos uma função que imita o parseInt, o parseFloat, entretando, se o usuário digitar um número decimal, o número a ser reconhecido e usado será o número decimal.
+
+    var numero2 = parseFloat(prompt("Numero decimal."));
+    mostra("O numero digitado é " + numero2);
+
+</script>
